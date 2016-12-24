@@ -20,7 +20,7 @@ Requirements
 Usage
 -----
 
-1. Generate a Pyramid project.
+1. Generate a Pyramid project, following the prompts from the command.
 
 .. code-block:: bash
 
@@ -32,11 +32,22 @@ Usage
 
 .. code-block:: bash
 
+    # Change directory into your newly created project.
     $ cd myproj
+    # Create a virtual environment...
     $ python3 -m venv env
+    # ...where we upgrade packaging tools...
+    $ env/bin/pip install --upgrade pip setuptools
+    # ...and into which we install our project and its testing requirements.
     $ env/bin/pip install -e ".[testing]"
 
-3. Run your project.
+3. Run your project's tests.
+
+.. code-block:: bash
+
+    $ env/bin/pytest
+
+4. Run your project.
 
 .. code-block:: bash
 
