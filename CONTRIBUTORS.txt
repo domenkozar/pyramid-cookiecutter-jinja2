@@ -108,3 +108,5 @@ Contributors
 ------------
 
 - Domen Kožar, 2016-12-07
+
+- Steve Piercy, 2016-12-24
